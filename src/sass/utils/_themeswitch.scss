@@ -1,0 +1,217 @@
+body.light-theme {
+  background-color: $white;
+  color: $title-text-color;
+}
+
+body.dark-theme {
+  background-color: $secondary-text-color;
+  color: $white;
+
+  & .section-title,
+  & .section-description,
+  & .item-check:checked~.item-title {
+    color: $primary-text-color;
+  }
+
+  & .section-text {
+    color: $bg-color;
+  }
+
+  & .item-title,
+  & .item-text,
+  & .header__menu,
+  & .footer__menu {
+    color: $white;
+  }
+
+  & .hero-section,
+  & .price-section,
+  & .feedback-section,
+  & .header,
+  & .footer,
+  & .callback {
+    background-color: $secondary-text-color;
+  }
+
+  & .left-part {
+    background-color: $btn-text-color;
+  }
+
+  & .right-part {
+    background-color: $accent-color4;
+  }
+
+  & .swiper-wrapper .slick-dots button {
+    background-color: $white;
+  }
+
+  & .slider__card {
+    background-color: $bg-color;
+
+  }
+
+  & .hero-section,
+  & .about-section,
+  & .stats-section,
+  & .feedback-section,
+    {
+    border: 0;
+  }
+
+  & .stats-section .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  & .button--primary,
+  & .button--secondary,
+  & .button--price {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+
+    &:hover {
+      text-decoration: none;
+      color: #2FDAC5 !important;
+      border: 2px solid #2FDAC5;
+    }
+  }
+
+  & .button--secondary2:hover {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+  }
+
+  & .dark-theme--btn,
+  & .form-callback--btn {
+    transition: all 0.5s ease-in-out;
+    color: $accent-color2;
+    background-color: transparent;
+    border: 2px solid $accent-color2;
+
+    &:hover {
+      background-color: transparent;
+      border: 2px solid $accent-color;
+      color: $accent-color;
+    }
+  }
+
+  & .validate,
+  & .callback-header,
+  & .cd-form,
+  & .cd-user-modal-container .cd-switcher a.selected,
+  & .callback-container {
+    background-color: $primary-text-color;
+    border-bottom: none;
+    color: $accent-color2;
+  }
+
+  & .cd-switcher {
+    margin-bottom: 0;
+  }
+
+  & .error-message {
+    color: #d30404;
+  }
+
+  & #username.error,
+  & #email.error,
+  & #phone.error {
+    border-color: #d30404;
+  }
+
+  & .cd-user-modal-container {
+    background-color: transparent;
+  }
+
+}
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px 24px;
+}
+
+/* THEME SWITCH */
+.theme-switch {
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch__icon {
+  color: currentColor;
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  &.icon-sun {
+    color: $gold;
+  }
+}
+
+.theme-switch__control {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  position: relative;
+  width: 35px;
+  height: 15px;
+  border-radius: 50em;
+  padding: 3px 0;
+}
+
+.theme-switch__toggle {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  pointer-events: none;
+}
+
+.theme-switch__track {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  user-select: none;
+  background-color: $accent-color;
+  border-radius: inherit;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.theme-switch__marker {
+  position: relative;
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  z-index: 2;
+  pointer-events: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  transform: translateX(3px);
+  transition: transform 250ms $timing-function;
+}
+
+.theme-switch__toggle:checked+.theme-switch__track {
+  background-color: #d3d3d4;
+}
+
+.theme-switch__toggle:checked~.theme-switch__marker {
+  transform: translateX(20px);
+}
+
+.theme-switch__toggle:focus+.theme-switch__track,
+.theme-switch__toggle:active+.theme-switch__track {
+  box-shadow: 0 0 0 3px #2196f3;
+}

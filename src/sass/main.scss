@@ -1,0 +1,30 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+@import './base/normalize.scss';
+@import './utils/vars';
+@import './base/basic';
+@import './utils/mixin';
+@import './utils/fonts';
+@import './utils/themeswitch';
+@import './components/button';
+@import './sections/header';
+@import './sections/hero';
+@import './sections/about';
+@import './sections/stats';
+@import './sections/feedback';
+@import './sections/faq';
+@import'./sections/callback';
+@import './sections/price';
+@import './sections/footer';
+@import './components/modal';
+@import './components/slider.scss';
+@import "./components/admin/admin";
+@import"./components/admin/about-course";
+@import"./components/admin/add";
+@import"./components/admin/button-admin";
+@import"./components/admin/button-admin";
+@import'./components/user-page/mobile-menu';
+@import'./components/user-page/button-user-page';
+@import'./components/user-page/user-page';
